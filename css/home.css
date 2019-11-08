@@ -1,0 +1,43 @@
+body {
+  background-color: #242424;
+}
+
+.logo-nombre {
+  font-family: 'Monoton', cursive;
+  color: #ff2d2d;
+  font-size: 40px;
+  padding-right: 15px;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex: wrap;
+  text-decoration: none;
+}
+
+.li-navbar {
+  padding: 10px 20px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 25px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.li-navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+#searchbar {
+  background-color: rgba(249, 249, 249, 0.5);
+  border-color: rgba(249, 249, 249, 0.5);
+  border-radius: 20px;
+  width: 50%;
+  height: 25px;
+  margin-top: 15px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  color: white;
+}
