@@ -5,7 +5,7 @@ body {
 .logo-nombre {
   font-family: 'Monoton', cursive;
   color: #ff2d2d;
-  font-size: 40px;
+  font-size: 35px;
   padding-right: 15px;
 }
 
@@ -19,7 +19,7 @@ body {
 .li-navbar {
   padding: 10px 20px;
   font-family: 'Questrial', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 10px;
   text-decoration: none;
   color: white;
@@ -27,6 +27,11 @@ body {
 
 .li-navbar a {
   text-decoration: none;
+  color: white;
+}
+
+.li-navbar a:hover{
+  text-decoration: underline;
   color: white;
 }
 
