@@ -67,11 +67,7 @@ header {
   color: white;
 }
 
-.inicio {
-
-}
-
-.inicio h1 {
+.inicio-h1 h1 {
   font-family: 'Questrial', sans-serif;
   font-weight: bold;
   color: white;
@@ -108,7 +104,6 @@ header {
     margin-left: 42%;
     font-family: 'Questrial', sans-serif;
   }
-
 
 .populares {
   display: flex;
