@@ -2,15 +2,13 @@ body {
   background-color: #242424;
 }
 
-header {
+.navbar {
   background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
   z-index: 2;
 }
 
 header {
   background-image: url('../images/inicio.jpg');
-  float: left;
-  overflow: hidden;
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -82,6 +80,7 @@ header {
   text-align: center;
   width: 90%;
   margin: auto;
+  padding-top: 50px;
 }
 
 .inicio p {
@@ -90,6 +89,7 @@ header {
   color: white;
   font-size: 2rem;
   text-align: center;
+  padding-top: 20px;
 }
 
 .inicio button {
@@ -102,8 +102,13 @@ header {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
-    margin-top: 0px;
     cursor: pointer;
     position: relative;
-    top: 10px;
+    margin-left: 42%;
   }
+
+
+.populares {
+  display: flex;
+  position: absolute;
+}
