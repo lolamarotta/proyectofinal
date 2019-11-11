@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
 
+
     <title>iPlay</title>
   </head>
   <body>
@@ -23,23 +24,30 @@
       <li class="li-navbar"> <a href="dos.html">Genre</a> </li>
       <li class="li-navbar"> <a href="#">TV Shows</a> </li>
       <li class="li-navbar"> <a href="buscador.html">Search</a> </li>
+
+      <li class="navbar-derecha">
+        <div class="buscador-derecha">
+          <!-- Aca va el simbolito de la lupita -->
+          <span uk-icon="icon: search; ratio: 1.5" id="flecha-abajo"></span>
+        </div>
+
+        <div class="login-derecha">
+          <!-- Aca va todo lo del login -->
+          <span uk-icon="icon: user; ratio: 1.5" id="flecha-abajo"></span>
+        </div>
+      </li>
+
     </ul>
+
+
   </nav>
 
-  <div class="buscador-derecha">
-    <!-- Aca va el simbolito de la lupita -->
-  </div>
-
-  <div class="login">
-    <!-- Aca va todo lo del login -->
-  </div>
 
   <div class="inicio-h1">
     <h1 class="inicio"> <b>The best place to watch your favorite TV Shows</b> </h1>
   </div>
 
   <div class="inicio">
-
     <div class="inicio-botones">
       <!-- Boton de suscripcion -->
       <p>JOIN FREE FOR A MONTH</p>
@@ -49,9 +57,9 @@
       <p>Already have an account?</p>
       <button type="button" name="login" value="" id="ingresar"> LOGIN </button>
     </div>
-
-
   </div>
+
+  <span uk-icon="icon: chevron-down; ratio: 5" id="flecha-abajo"></span>
 
 </header>
 <!-- Fin del header -->
