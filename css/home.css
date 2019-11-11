@@ -121,3 +121,9 @@ span {
   display: flex;
   position: absolute;
 }
+
+.login-derecha{
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
