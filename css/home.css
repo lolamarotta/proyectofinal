@@ -55,6 +55,7 @@ header {
   color: white;
 }
 
+
 #searchbar {
   background-color: rgba(249, 249, 249, 0.5);
   border-color: rgba(249, 249, 249, 0.5);
@@ -104,6 +105,15 @@ header {
     margin-left: 42%;
     font-family: 'Questrial', sans-serif;
   }
+
+#flecha-abajo {
+  color: white;
+}
+
+span {
+  position: relative;
+  margin-left: 47%;
+}
 
 .populares {
   display: flex;
