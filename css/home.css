@@ -4,10 +4,15 @@ body {
 
 header {
   background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  z-index: 2;
+}
+
+header {
   background-image: url('../images/inicio.jpg');
   float: left;
   overflow: hidden;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .logo-nombre a {
