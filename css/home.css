@@ -3,7 +3,11 @@ body {
 }
 
 header {
-background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  background-image: url('../images/inicio.jpg');
+  float: left;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 .logo-nombre a {
@@ -60,7 +64,7 @@ background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 .inicio {
-  background-image: url('../images/inicio.jpg');
+
 }
 
 .inicio h1 {
@@ -71,7 +75,8 @@ background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
   /*line-height: 96px;*/
   font-weight: bold;
   text-align: center;
-  margin-top: 18%;
+  width: 90%;
+  margin: auto;
 }
 
 .inicio p {
