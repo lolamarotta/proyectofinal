@@ -47,8 +47,17 @@ fetch(URL_POPULARES)
 //  for (var i = 0; i < arrayPuntuadas.length; i++) {
 //    var ulPuntuadas = document.querySelector(".mayorpuntaje ul")
 
-//    var imgURLDos = ""
+//    var imgURLDos = "https://image.tmdb.org/tv/popular"+ arrayPuntuadas[i].poster_path;
+
+//    ulPuntuadas.innerHTML +=
+//        <li>
+//          <a href="detalle.html?id=${arrayPuntuadas[i].id}">
+//          <img src="${imgURLDos}" alt="">
+//          </a>
+//        </li>
+//        `;
 //  }
+//  });
 
 
 })
