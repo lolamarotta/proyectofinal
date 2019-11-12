@@ -3,8 +3,7 @@ window.addEventListener('load',function() {
 var API_KEY = "d8a0184cd857dc924c05b43e5a4f7274";
 var URL_POPULARES = "https://api.themoviedb.org/3/tv/popular?api_key="+API_KEY+"&page=1";
 var URL_MEJOR_PUNTUADAS = "https://api.themoviedb.org/3/tv/top_rated?api_key="+API_KEY+"&page=1";
-//URL_MEJOR_PUNTUADAS
-//URL_AL_AIRE_HOY
+var URL_AL_AIRE_HOY = "https://api.themoviedb.org/3/tv/airing_today?api_key="+API_KEY+"&language=en-US";
 
 //UL ul-populares
 
@@ -61,6 +60,33 @@ fetch(URL_MEJOR_PUNTUADAS)
   .catch(function(errors) {
     console.log(errors);
   });
+
+
+// SERIES EN AIRE
+fetch(URL_AL_AIRE_HOY)
+  .then(function(rta) {
+    return rta.json();
+  })
+  .then(function(data) {
+    console.log(data);
+  var arrayAire = data.results;
+
+  for (var i = 0; i < arrayAire.length; i++) {
+    arrayAire[i]
+    console.log(data.results[i].name);
+    console.log(data.results[i].id);
+    console.log(data.results[i].poster_path);
+
+    var ulAire = document.querySelector(".enaire")
+    var elementosHtml = '<li>';
+      elementosHtml += '<div class="uk-panel"'
+      elementosHtml += '<a href="detalle.html?id=${data.results[i].id}">'
+      elementosHtml += '<img src="https://image.tmdb.org/t/p/original' + data.results[i].poster_path + '" elements>'
+      elementosHtml += '</div> </li>'
+      ulAire.innerHTML += elementosHtml
+    }
+  });
+
 
 
 })

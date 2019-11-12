@@ -162,6 +162,11 @@ span {
   position: absolute;
 }
 
+.onair {
+  display: flex;
+  position: absolute;
+}
+
 .login-derecha{
   margin-right: 50px;
   display: flex;
