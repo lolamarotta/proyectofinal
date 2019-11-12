@@ -155,7 +155,11 @@ span {
 .populares {
   display: flex;
   position: absolute;
+}
 
+.mayorpuntaje {
+  display: flex;
+  position: absolute;
 }
 
 .login-derecha{
