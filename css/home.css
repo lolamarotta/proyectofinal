@@ -81,7 +81,19 @@ header {
   padding-top: 50px;
 }
 
-.inicio p {
+.inicio-h2 h2{
+  font-family: 'Questrial', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 60px;
+  /*line-height: 96px;*/
+  font-weight: bold;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.inicio-subscribe p {
   font-family: 'Questrial', sans-serif;
   font-weight: bold;
   color: white;
@@ -90,7 +102,7 @@ header {
   padding-top: 20px;
 }
 
-.inicio button {
+.inicio-subscribe button {
     color: white;
     background-color: #ff2d2d;
     border-radius: 30px;
@@ -103,6 +115,31 @@ header {
     cursor: pointer;
     position: relative;
     margin-left: 42%;
+    font-family: 'Questrial', sans-serif;
+  }
+
+  .inicio-login p {
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .inicio-login button {
+    color: white;
+    background-color: #ff2d2d;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 0px;
+    width: 200px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    margin-left: 43%;
     font-family: 'Questrial', sans-serif;
   }
 
