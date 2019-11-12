@@ -18,7 +18,7 @@ fetch(URL_POPULARES)
     var arrayDeSeries = objetoRespuesta.results
 
     for (var i = 0; i < arrayDeSeries.length; i++) {
-      var ulPopulares = document.querySelector(".populares ul")
+      var ulPopulares = document.querySelector(".populares")
 
       var imgURL = "https://image.tmdb.org/t/p/original"+ arrayDeSeries[i].poster_path;
 
