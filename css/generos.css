@@ -115,9 +115,21 @@ footer p{
   flex-wrap: wrap;
 }
 
-.generos-lista a {
+.generos-lista div {
   width: 25%;
 }
+
+.generos-lista div h2 {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 2;
+  font-family: 'Questrial', sans-serif;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
 
 /* body normal */
 
