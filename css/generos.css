@@ -1,0 +1,126 @@
+/* header y navbar */
+
+.navbar {
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  z-index: 2;
+}
+
+.logo-nombre a {
+  font-family: 'Monoton', cursive;
+  color: #ff2d2d;
+  font-size: 35px;
+  padding-right: 15px;
+}
+
+.logo-nombre a:hover {
+  font-family: 'Monoton', cursive;
+  color: red;
+  font-size: 35px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  align-items: center;
+}
+
+.li-navbar {
+  padding: 10px 20px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.li-navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.li-navbar a:hover{
+  text-decoration: none;
+  color: grey;
+}
+
+.navbar-derecha {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-left: 59.5%;
+}
+
+.navbar-derecha div {
+  padding-right: 15px;
+}
+
+#flecha-abajo {
+  color: white;
+}
+
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 50px;
+  color: #ff2d2d;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding-bottom: 0px;
+  font-family: 'Questrial', sans-serif;
+}
+
+footer img{
+  max-width: 100px;
+  max-height: 30px;
+  margin-left: 80px;
+}
+
+footer button{
+  background-color: rgba(0, 0, 0, 0);
+  width: 80px;
+  font-size: 16px;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  top: 0;
+  color: red;
+  border: none;
+  color: white;
+  font-family: 'Questrial', sans-serif;
+}
+
+footer p{
+  display: flex;
+  align-items: center;
+}
+
+
+/* primera parte listado generos */
+
+.generos-lista {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.generos-lista a {
+  width: 25%;
+}
+
+/* body normal */
+
+body {
+  background-color: #242424;
+}
