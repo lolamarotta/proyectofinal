@@ -60,7 +60,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-left: 57%;
+  margin-left: 48%;
 }
 
 .navbar-derecha div {
@@ -142,11 +142,11 @@ header {
     font-family: 'Questrial', sans-serif;
   }
 
-#flecha-abajo {
+#user2 {
   color: white;
 }
 
-.flecha-abajo{
+#user2{
   margin-left: 46%;
 }
 

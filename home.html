@@ -33,34 +33,40 @@
           <!-- Aca va el simbolito de la lupita -->
           <span uk-icon="icon: search; ratio: 1.5" id="flecha-abajo"></span>
         </div>
+        <div class="login">
+          <span id="user2">
+            <i class="fas fa-user"></i>
+            <p style="display:none; font-size: 20px;"></p>
+            </span>
 
 
 
 
     <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>
-      <span uk-icon="icon: user; ratio: 1.5" id="flecha-abajo">
+      <p>LOGIN</p><!-- <span uk-icon="icon: user; ratio: 1.5" id="flecha-abajo">
         <i class="fas fa-user"></i>
-      </span>
+      </span> -->
     </a>
 
-<div id="modal-center" class="uk-flex-top" uk-modal>
+<div id="modal-center" class="uk-flex-top" uk-modal style="border:none;">
+
     <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 
         <button class="uk-modal-close-default" type="button" uk-close></button>
 
-        <form id="formlogin" action="">
+        <form id="formlogin" action="" method="get">
           <h3>Username</h3>
         <div class= "uk-margin">
          <div class="uk-inline uk-width-2-3">
            <span class= "uk-form-icon" uk-icon="icon: user"></span>
-           <input class= "uk-input" type= "text" id="name">
+           <input class= "uk-input" type= "text" id="name" name="name">
          </div>
        </div>
           <h3>Email</h3>
         <div class= "uk-margin">
           <div class= "uk-inline uk-width-2-3">
             <span class= "uk-form-icon" uk-icon= "icon: mail"></span>
-            <input class="uk-input" type="text" id="email">
+            <input class="uk-input" type="text" id="email" name="email">
           </div>
         </div>
           <h3>Gender</h3>
@@ -74,9 +80,11 @@
        </select>
        </div>
        </div>
+
+       <button type="submit" name="button">Subscribe</button>
+
      </form>
 
-     <button type="submit" name="button">Subscribe</button>
 
     </div>
 </div>
@@ -187,3 +195,4 @@
 
 <script type="text/javascript" src="js/home.js"></script>
 <script type="text/jscript" src="js/login.js"></script>
+<script type="text/jscript" src="js/buscador.js"></script>
