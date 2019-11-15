@@ -5,7 +5,7 @@ window.addEventListener('load',function() {
 var API_KEY = "d8a0184cd857dc924c05b43e5a4f7274";
 var URL_GENEROS = 'https://api.themoviedb.org/3/genre/tv/list?api_key=' + API_KEY;
 
-var arrayDeImagenes = ['posteraccion.jpg', 'posteranimacion.jpg', 'postercomedia.jpg', 'postercrimen.jpg', 'posterdocu.jpg', 'posterdrama.jpg', 'posterflia.jpg'];
+var arrayDeImagenes = ['posteraccion.jpg', 'posteranimacion.jpg', 'postercomedia.jpg', 'postercrimen.jpg', 'posterdocu.jpg', 'posterdrama.jpg', 'posterflia.jpg', 'posterkids.jpg','postermisterio.jpg', 'posternews.jpg', 'posterreality.jpg', 'posterciencia.jpg','posteresperanza.jpg', 'postertalk.jpg', 'posterwar.jpg','posterwestern.jpg'];
 
 fetch(URL_GENEROS)
   .then(function(respuesta) {
