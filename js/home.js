@@ -15,9 +15,11 @@ fetch(URL_POPULARES)
     console.log(objetoRespuesta);
 
     var arrayDeSeries = objetoRespuesta.results
+    var ulPopulares = document.querySelector("#populares ul")
+    console.log(ulPopulares);
 
     for (var i = 0; i < arrayDeSeries.length; i++) {
-      var ulPopulares = document.querySelector(".populares")
+
 
       var imgURL = "https://image.tmdb.org/t/p/original"+ arrayDeSeries[i].poster_path;
 
@@ -39,16 +41,18 @@ fetch(URL_MEJOR_PUNTUADAS)
     return respuesta.json();
   })
   .then(function(datos){
-    console.log(datos);
+    // console.log(datos);
   var arrayPuntuadas = datos.results;
+
+  var ulPuntuadas = document.querySelector("#mayorpuntaje ul")
+
 
   for (var i = 0; i < arrayPuntuadas.length; i++) {
     datos.results[i]
-    console.log(datos.results[i].name);
-    console.log(datos.results[i].id);
-    console.log(datos.results[i].poster_path);
+    // console.log(datos.results[i].name);
+    // console.log(datos.results[i].id);
+    // console.log(datos.results[i].poster_path);
 
-    var ulPuntuadas = document.querySelector(".mayorpuntaje")
     var elementsHtml = '<li>';
       elementsHtml += '<div class="uk-panel"'
       elementsHtml += '<a href="detalle.html?id=${datos.results[i].id}">'
@@ -68,16 +72,18 @@ fetch(URL_AL_AIRE_HOY)
     return rta.json();
   })
   .then(function(data) {
-    console.log(data);
+    // console.log(data);
   var arrayAire = data.results;
+
+  var ulAire = document.querySelector("#enaire ul")
+
 
   for (var i = 0; i < arrayAire.length; i++) {
     arrayAire[i]
-    console.log(data.results[i].name);
-    console.log(data.results[i].id);
-    console.log(data.results[i].poster_path);
+    // console.log(data.results[i].name);
+    // console.log(data.results[i].id);
+    // console.log(data.results[i].poster_path);
 
-    var ulAire = document.querySelector(".enaire")
     var elementosHtml = '<li>';
       elementosHtml += '<div class="uk-panel"'
       elementosHtml += '<a href="detalle.html?id=${data.results[i].id}">'

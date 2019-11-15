@@ -16,7 +16,9 @@ fetch(URL_GENEROS)
   })
   .then(function(datos){
     var arrayDeResultados = datos.results;
-    console.log(arrayDeResultados);
+
+    // Array vacio donde metere las series que coincidan con el ide de genero`
+    var
   })
   .catch(function(errors) {
     console.log(errors);

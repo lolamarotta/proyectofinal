@@ -178,7 +178,7 @@ span {
   position: relative;
 
 }
-
+/* 
 .populares {
   display: flex;
   position: absolute;
@@ -192,7 +192,7 @@ span {
 .onair {
   display: flex;
   position: absolute;
-}
+} */
 
 .peliculas h2 {
   font-family: 'Questrial', sans-serif;
