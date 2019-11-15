@@ -14,6 +14,9 @@ fetch(URL_DETALLE)
   .then(function (data) {
     console.log(data);
     // cosas para meter en el html el contenido
+    var detalleSerie = document.querySelector('.detalle-serie');
+
+    detalleSerie.innerHTML += "<h2>" + data.name + "</h2>";
   })
   .catch(function (error) {
     console.log(error);
