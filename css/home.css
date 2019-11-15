@@ -160,11 +160,15 @@ span {
 }
 
 .uk-button-default {
-  background-color: white;
+  background-color: none;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Questrial', sans-serif;
 }
 
 .login-derecha{
