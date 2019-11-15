@@ -62,6 +62,70 @@
   color: white;
 }
 
+#user2 {
+  color: white;
+  margin: 0;
+  padding-right: 15px;
+}
+
+span {
+  position: relative;
+  margin-left: 49%;
+}
+
+.uk-button-default {
+  background-color: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.login-derecha{
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+.login {
+  /* margin-right: 50px; */
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  text-align: center;
+}
+
+.button {
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 14px 0;
+  border-radius: 30px;
+  width: 225px;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.uk-button-default {
+  background-color: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Questrial', sans-serif;
+}
 
 /* footer */
 
