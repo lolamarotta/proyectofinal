@@ -8,10 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
 
     <!-- Estos son los links a los otros archivos, y adentro estan tambien los links the UIKit -->
-    <link rel="stylesheet" href="css/home.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="css/home.css">
 
 
     <title>iPlay</title>
@@ -23,73 +25,28 @@
   <nav id="home">
     <!-- Barra de navegacion -->
     <ul class="navbar">
-      <li class="logo-nombre"> <a href="#home">iPlay</a> </li>
+      <li class="li-navbar" id="logo-nombre"> <a href="#home">iPlay</a> </li>
       <li class="li-navbar"> <a href="generos.html">Genre</a> </li>
       <li class="li-navbar"> <a href="generos.html#series">TV Shows</a> </li>
       <li class="li-navbar"> <a href="buscador.html">Search</a> </li>
 
       <li class="navbar-derecha">
+        <!--
         <div class="buscador-derecha">
-          <!-- Aca va el simbolito de la lupita -->
           <span uk-icon="icon: search; ratio: 1.5" id="flecha-abajo"></span>
         </div>
+        -->
+
         <div class="login">
           <span id="user2">
             <i class="fas fa-user"></i>
             <p style="display:none; font-size: 20px;"></p>
-            </span>
+          </span>
 
-
-
-
-    <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>
-      <p>LOGIN</p><!-- <span uk-icon="icon: user; ratio: 1.5" id="flecha-abajo">
-        <i class="fas fa-user"></i>
-      </span> -->
-    </a>
-
-<div id="modal-center" class="uk-flex-top" uk-modal style="border:none;">
-
-    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-
-        <form id="formlogin" action="" method="get">
-          <h3>Username</h3>
-        <div class= "uk-margin">
-         <div class="uk-inline uk-width-2-3">
-           <span class= "uk-form-icon" uk-icon="icon: user"></span>
-           <input class= "uk-input" type= "text" id="name" name="name">
-         </div>
-       </div>
-          <h3>Email</h3>
-        <div class= "uk-margin">
-          <div class= "uk-inline uk-width-2-3">
-            <span class= "uk-form-icon" uk-icon= "icon: mail"></span>
-            <input class="uk-input" type="text" id="email" name="email">
-          </div>
+          <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>
+            LOGIN
+          </a>
         </div>
-          <h3>Gender</h3>
-        <div class="uk-margin">
-          <div class= "uk-inline uk-width-2-3">
-
-       <select class= "uk-select" id="genero">
-       <option> Male </option>
-       <option> Female </option>
-       <option> Undefined </option>
-       </select>
-       </div>
-       </div>
-
-       <button type="submit" name="button">Subscribe</button>
-
-     </form>
-
-
-    </div>
-</div>
-
-
       </li>
 
     </ul>
@@ -115,12 +72,14 @@
     <div class="inicio-subscribe">
       <!-- Boton de suscripcion -->
       <p>Start your free trial</p>
-      <button type="button" name="Subscribe" value=""> SUBSCRIBE </button>
+      <!-- <button type="button" name="Subscribe" value=""> SUBSCRIBE </button> -->
+      <a href="#"> SUBSCRIBE </a>
     </div>
     <div class="inicio-login">
       <!-- Boton de login -->
       <p>Already have an account?</p>
-      <button type="button" name="login" value="" id="ingresar"> LOGIN </button>
+      <a href="#modal-center" uk-toggle>LOGIN</a>
+      <!-- <button type="button" name="login" value="" id="ingresar"> LOGIN </button> -->
     </div>
   </div>
 
@@ -192,7 +151,45 @@
 <script type="text/javascript" src="js/home.js"></script>
 <script type="text/jscript" src="js/login.js"></script>
 <script type="text/jscript" src="js/buscador.js"></script>
+<div id="modal-center" class="uk-flex-top" uk-modal style="border:none;">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <form id="formlogin" action="" method="get">
+          <h3>Username</h3>
+        <div class= "uk-margin">
+         <div class="uk-inline uk-width-2-3">
+           <span class= "uk-form-icon" uk-icon="icon: user"></span>
+           <input class= "uk-input" type= "text" id="name" name="name">
+         </div>
+       </div>
+          <h3>Email</h3>
+        <div class= "uk-margin">
+          <div class= "uk-inline uk-width-2-3">
+            <span class= "uk-form-icon" uk-icon= "icon: mail"></span>
+            <input class="uk-input" type="text" id="email" name="email">
+          </div>
+        </div>
+          <h3>Gender</h3>
+        <div class="uk-margin">
+          <div class= "uk-inline uk-width-2-3">
+
+       <select class= "uk-select" id="genero">
+       <option> Male </option>
+       <option> Female </option>
+       <option> Undefined </option>
+       </select>
+       </div>
+       </div>
+
+       <button type="submit" name="button">Subscribe</button>
+
+     </form>
+
+
+    </div>
+</div>
 </body>
 
 </html>

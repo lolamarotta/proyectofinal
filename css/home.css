@@ -14,11 +14,10 @@ header {
   background-size: cover;
 }
 
-.logo-nombre a {
+#logo-nombre a {
   font-family: 'Monoton', cursive;
   color: #ff2d2d;
   font-size: 35px;
-  padding-right: 15px;
 }
 
 .logo-nombre a:hover {
@@ -31,10 +30,10 @@ header {
 
 .navbar {
   list-style: none;
+  padding: 10px 40px;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  text-decoration: none;
-  align-items: center;
 }
 
 .li-navbar {
@@ -43,6 +42,9 @@ header {
   font-size: 20px;
   text-decoration: none;
   color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .li-navbar a {
@@ -60,7 +62,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-left: 48%;
+  margin-left: auto;
 }
 
 .navbar-derecha div {
@@ -101,7 +103,7 @@ header {
   padding-top: 20px;
 }
 
-.inicio-subscribe button {
+.inicio-subscribe a {
     color: white;
     background-color: #ff2d2d;
     border-radius: 30px;
@@ -115,6 +117,8 @@ header {
     position: relative;
     margin-left: 42%;
     font-family: 'Questrial', sans-serif;
+    display: inline-block;
+    text-align: center;
   }
 
   .inicio-login p {
@@ -126,7 +130,7 @@ header {
     padding-top: 40px;
   }
 
-  .inicio-login button {
+  .inicio-login a {
     color: white;
     background-color: #ff2d2d;
     border-radius: 30px;
@@ -140,19 +144,27 @@ header {
     position: relative;
     margin-left: 43%;
     font-family: 'Questrial', sans-serif;
+    display: inline-block;
+    text-align: center;
   }
 
 #user2 {
   color: white;
-}
-
-#user2{
-  margin-left: 46%;
+  margin: 0;
+  padding-right: 15px;
 }
 
 span {
   position: relative;
   margin-left: 49%;
+}
+
+.uk-button-default {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .login-derecha{
@@ -186,7 +198,7 @@ span {
 }
 
 .login {
-  margin-right: 50px;
+  /* margin-right: 50px; */
   display: flex;
   align-items: center;
 }
