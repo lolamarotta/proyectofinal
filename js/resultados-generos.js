@@ -22,7 +22,7 @@ fetch(URL_GENEROS)
     var arrayDeResultados = datos.results;
     console.log(datos);
 
-var ulGeneros= document.querySelector(".generos")
+// var ulGeneros= document.querySelector(".generos")
 for (var i = 0; i < arrayDeResultados.length; i++) {
   arrayDeResultados[i]
 
