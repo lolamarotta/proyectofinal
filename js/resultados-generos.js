@@ -9,6 +9,7 @@ var query = new URLSearchParams(location.search);
 
 var idGenero = query.get('idGenero');
 var nombreGenero = query.get('nombreGenero');
+document.querySelector(".nombre-generos").innerHTML=nombreGenero;
 
 console.log(idGenero);
 var URL_GENEROS = 'https://api.themoviedb.org/3/discover/tv?api_key=' + API_KEY + '&sort_by=popularity.desc&page=1&with_genres='+ idGenero;
@@ -38,6 +39,24 @@ for (var i = 0; i < arrayDeResultados.length; i++) {
   .catch(function(errors) {
     console.log(errors);
   });
+
+  fetch("https://api.themoviedb.org/3/discover/tv?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_generes="+idGenero+"")
+    .then(function(respuesta) {
+      return respuesta.json();
+    })
+    .then(function(datos){
+      var arrayDeResultados = datos.results;
+      console.log(datos);
+      for (var i = 0; i < arrayDeResultados.length; i++) {
+        var png = arrayDeResultados[i].poster_path;
+        var id = arrayDeResultados[i].id
+        document.querySelector(".grid-genero").innerHTML += '<li class="li-item" tabindex="0"><a href="resultados-por-genero.html?idpeli= '+ id +' "><img class="img-li" src="https://image.tmdb.org/t/p/w185'+png+'"></a>'
+
+      }
+     })
+    .catch(function(errors) {
+      console.log(errors);
+    });
 
 
 
