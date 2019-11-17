@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
 
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/detalles.css">
 
 
     <title>iPlay</title>
@@ -29,20 +29,20 @@
       <li class="li-navbar"> <a href="generos.html">Genre</a> </li>
       <li class="li-navbar"> <a href="series.html">TV Shows</a> </li>
       <li class="li-navbar">
-        <form action="buscador.html" method="get">
+        <form action="buscador.html" method="get" class="buscador">
           <input type="text" name="searchWord">
-          <button type="submit">BUSCAR</button>
+          <button type="submit">Search</button>
         </form>
       </li>
 
-      <li class="navbar-derecha">
+      <!-- <li class="navbar-derecha"> -->
         <!--
         <div class="buscador-derecha">
           <span uk-icon="icon: search; ratio: 1.5" id="flecha-abajo"></span>
         </div>
         -->
 
-        <div class="login">
+        <!-- <div class="login">
           <span id="user2">
             <i class="fas fa-user"></i>
             <p style="display:none; font-size: 20px;"></p>
@@ -52,14 +52,20 @@
             LOGIN
           </a>
         </div>
-      </li>
+      </li> -->
     </ul>
   </nav>
+</header>
 
-  <div class="detalle-serie">
+<div class="detalle-serie">
+  <h1>Series details</h1>
+</div>
+  <!-- <div class="detalle-serie">
     <h2>Los detalles de la serie</h2>
-  </div>
+  </div> -->
 
+<br>
+<br>
 
 
 
@@ -71,7 +77,7 @@
     <button id="logoutbutton">Log Out</button>
   </footer>
 
-  <div id="modal-center" class="uk-flex-top" uk-modal style="border:none;">
+  <!-- <div id="modal-center" class="uk-flex-top" uk-modal style="border:none;">
       <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 
           <button class="uk-modal-close-default" type="button" uk-close></button>
@@ -109,7 +115,7 @@
 
 
       </div>
-  </div>
+  </div> -->
 
   <script src="js/login.js"></script>
   <script src="js/buscador.js"></script>

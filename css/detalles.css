@@ -1,0 +1,152 @@
+.navbar {
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  z-index: 2;
+}
+
+#logo-nombre a {
+  font-family: 'Monoton', cursive;
+  color: #ff2d2d;
+  font-size: 35px;
+}
+
+.logo-nombre a:hover {
+  font-family: 'Monoton', cursive;
+  color: red;
+  font-size: 35px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.navbar {
+  list-style: none;
+  padding: 10px 40px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.li-navbar {
+  padding: 10px 20px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.li-navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.li-navbar a:hover{
+  text-decoration: none;
+  color: grey;
+}
+
+.buscador input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-family: 'Questrial', sans-serif;
+  color: black;
+  height: 20px;
+  width: 200px;
+}
+
+.buscador button {
+  color: white;
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+ /* Fin del header */
+
+
+ /* Body */
+
+body {
+  background-color: black;
+}
+
+.detalle-serie h1 {
+  color: white;
+  font-family: 'Questrial', sans-serif;
+  font-size: 2.5rem;
+}
+
+.detalle-serie h2 {
+  color: white;
+  font-family: 'Questrial', sans-serif;
+  font-weight: 1000;
+  font-size: 3.5rem;
+}
+
+.detalle-serie img {
+  height: 30rem;
+}
+
+.detalle-serie h4 {
+  font-family: 'Questrial', sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+.detalle-serie p {
+  color: rgba(200, 200, 200, 1);
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+}
+
+.detalle-serie {
+  width: 94%;
+  margin-left: 3%;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 50px;
+  color: #ff2d2d;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-bottom: 0px;
+  font-family: 'Questrial', sans-serif;
+}
+
+footer img{
+  max-width: 100px;
+  max-height: 30px;
+  margin-left: 80px;
+}
+
+footer button{
+  background-color: rgba(0, 0, 0, 0);
+  width: 80px;
+  font-size: 16px;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  top: 0;
+  color: red;
+  border: none;
+  color: white;
+  font-family: 'Questrial', sans-serif;
+}
+
+footer p{
+  display: flex;
+  align-items: center;
+}
+
+/* Fin del footer */
