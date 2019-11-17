@@ -1,5 +1,5 @@
 body {
-  background-color: #242424;
+  background-color: black;
 }
 
 .navbar {
@@ -12,6 +12,7 @@ header {
   background-repeat: no-repeat;
   z-index: 1;
   background-size: cover;
+  height: 100vh;
 }
 
 #logo-nombre a {
@@ -56,6 +57,24 @@ header {
   text-decoration: none;
   color: grey;
 }
+
+.buscador input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-family: 'Questrial', sans-serif;
+  color: black;
+  height: 20px;
+  width: 200px;
+}
+
+.buscador button {
+  color: white;
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
 
 .navbar-derecha {
   position: relative;
@@ -138,7 +157,7 @@ header {
     padding: 10px 0px;
     width: 200px;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -178,7 +197,7 @@ span {
   position: relative;
 
 }
-/* 
+/*
 .populares {
   display: flex;
   position: absolute;
@@ -198,7 +217,13 @@ span {
   font-family: 'Questrial', sans-serif;
   font-weight: bold;
   color: white;
-  padding-left: 2%;
+  padding-left: 3.7%;
+}
+
+.peliculas div {
+  width: 94%;
+  align-items: center;
+  margin-left: 3%;
 }
 
 .login {
