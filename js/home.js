@@ -53,11 +53,11 @@ fetch(URL_MEJOR_PUNTUADAS)
     // console.log(datos.results[i].id);
     // console.log(datos.results[i].poster_path);
 
-    var elementsHtml = '<li>';
-      elementsHtml += '<div class="uk-panel"'
+    var elementsHtml = `<li>`;
+      elementsHtml += `<div class="uk-panel">`
       elementsHtml += `<a href="detalle.html?id=${datos.results[i].id}">`
-      elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + datos.results[i].poster_path + '" elements>'
-      elementsHtml += '</div> </li>'
+      elementsHtml += `<img src="https://image.tmdb.org/t/p/original` + datos.results[i].poster_path + `" elements>`
+      elementsHtml += `</div> </li>`
       ulPuntuadas.innerHTML += elementsHtml
     }
   })
@@ -84,11 +84,11 @@ fetch(URL_AL_AIRE_HOY)
     // console.log(data.results[i].id);
     // console.log(data.results[i].poster_path);
 
-    var elementosHtml = '<li>';
-      elementosHtml += '<div class="uk-panel"'
+    var elementosHtml = `<li>`;
+      elementosHtml += `<div class="uk-panel">`
       elementosHtml += `<a href="detalle.html?id=${data.results[i].id}">`
-      elementosHtml += '<img src="https://image.tmdb.org/t/p/original' + data.results[i].poster_path + '" elements>'
-      elementosHtml += '</div> </li>'
+      elementosHtml += `<img src="https://image.tmdb.org/t/p/original` + data.results[i].poster_path + `" elements>`
+      elementosHtml += `</div> </li>`
       ulAire.innerHTML += elementosHtml
     }
   });

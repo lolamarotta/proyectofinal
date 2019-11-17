@@ -22,7 +22,7 @@ fetch(URL_DETALLE)
 
     detalleSerie.innerHTML += "<h2>" + data.name + "</h2>";
     detalleSerie.innerHTML += "<h4>Overview:</h4><p>" + data.overview + "</p>";
-    detalleSerie.innerHTML += "<h4>First air date:</h4><p>" + data.first_air_date + "</p>";
+    detalleSerie.innerHTML += "<h4>On air since:</h4><p>" + data.first_air_date + "</p>";
     detalleSerie.innerHTML += "<h4>Original language:</h4><p>" + data.original_language + "</p>";
   })
   .catch(function (error) {
