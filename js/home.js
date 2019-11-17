@@ -55,7 +55,7 @@ fetch(URL_MEJOR_PUNTUADAS)
 
     var elementsHtml = '<li>';
       elementsHtml += '<div class="uk-panel"'
-      elementsHtml += '<a href="detalle.html?id=${datos.results[i].id}">'
+      elementsHtml += `<a href="detalle.html?id=${datos.results[i].id}">`
       elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + datos.results[i].poster_path + '" elements>'
       elementsHtml += '</div> </li>'
       ulPuntuadas.innerHTML += elementsHtml
@@ -86,7 +86,7 @@ fetch(URL_AL_AIRE_HOY)
 
     var elementosHtml = '<li>';
       elementosHtml += '<div class="uk-panel"'
-      elementosHtml += '<a href="detalle.html?id=${data.results[i].id}">'
+      elementosHtml += `<a href="detalle.html?id=${data.results[i].id}">`
       elementosHtml += '<img src="https://image.tmdb.org/t/p/original' + data.results[i].poster_path + '" elements>'
       elementosHtml += '</div> </li>'
       ulAire.innerHTML += elementosHtml

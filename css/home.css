@@ -197,6 +197,18 @@ span {
   position: relative;
 
 }
+
+.preview {
+  background-color: black;
+  align-items: center;
+}
+
+.preview h1 {
+  font-family: 'Questrial', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 5%;
+}
 /*
 .populares {
   display: flex;
