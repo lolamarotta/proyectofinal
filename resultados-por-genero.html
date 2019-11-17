@@ -22,19 +22,25 @@
     <ul class="navbar">
       <li class="logo-nombre"> <a href="home.html">iPlay</a> </li>
       <li class="li-navbar"> <a href="generos.html">Genre</a> </li>
-      <li class="li-navbar"> <a href="tres.html">TV Shows</a> </li>
-      <li class="li-navbar"> <a href="buscador.html">Search</a> </li>
+      <li class="li-navbar"> <a href="series.html">TV Shows</a> </li>
+      <li class="li-navbar">
+        <form class="buscador" action="buscador.html" method="get">
+          <input type="text" name="searchWord">
+          <button type="submit">Search</button>
+        </form>
+      </li>
+      <!-- <li class="li-navbar"> <a href="buscador.html">Search</a> </li> -->
 
-      <li class="navbar-derecha">
+      <!-- <li class="navbar-derecha">
         <div class="buscador-derecha">
-          <!-- Aca va el simbolito de la lupita -->
+          <!- Aca va el simbolito de la lupita ->
           <span uk-icon="icon: search; ratio: 1.5" id="flecha-abajo"></span>
         </div>
         <div class="login-derecha">
-          <!-- Aca va todo lo del login -->
+          <!- Aca va todo lo del login ->
           <span uk-icon="icon: user; ratio: 1.5" id="flecha-abajo"></span>
         </div>
-      </li>
+      </li> -->
     </ul>
   </nav>
 </header>
@@ -58,7 +64,7 @@
 <section>
   <div class="">
     <ul class="grid-genero">
-        
+
     </ul>
   </div>
 

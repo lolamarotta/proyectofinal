@@ -46,6 +46,23 @@
   color: grey;
 }
 
+.buscador input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-family: 'Questrial', sans-serif;
+  color: black;
+  height: 20px;
+  width: 200px;
+}
+
+.buscador button {
+  color: white;
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
 .navbar-derecha {
   position: relative;
   display: flex;
@@ -130,8 +147,8 @@ span {
   font-family: 'Questrial', sans-serif;
   color: white;
   font-size: 4rem;
+  margin-left: 3%;
 }
-
 
 /* footer */
 
@@ -144,7 +161,7 @@ footer {
   align-items: center;
   padding: 0;
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 1rem;
   padding-bottom: 0px;
   font-family: 'Questrial', sans-serif;
 }
@@ -196,7 +213,6 @@ footer p{
   z-index: 2;
   font-family: 'Questrial', sans-serif;
   color: white;
-  align-items: center;
   text-align: center;
 }
 
@@ -210,9 +226,10 @@ body {
 .grid-genero {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   list-style: none;
   position: relative;
-  right: 13px;
+  /* right: 13px; */
+  width: 94%;
+  justify-content: space-around;
 
 }
