@@ -58,10 +58,6 @@ window.addEventListener('load',function() {
     console.log(errors);
   });
 
-  // Fetch para trailers
-  fetch("https://api.themoviedb.org/3/tv/2190/videos?api_key=d8a0184cd857dc924c05b43e5a4f7274&language=en-US")
-  /*
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/3EGzHsye71c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  */
+  
 
 })

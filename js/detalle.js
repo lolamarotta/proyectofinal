@@ -31,4 +31,24 @@ fetch(URL_DETALLE)
     console.log(error);
   })
 
+
+  // Fetch para trailers
+  fetch("https://api.themoviedb.org/3/tv/"+ idSerie +"/videos?api_key=d8a0184cd857dc924c05b43e5a4f7274&language=en-US")
+    .then(function(respuesta){
+    return respuesta.json();
+    })
+    .then(function(serieTrailer) {
+     console.log(serieTrailer);
+     console.log(serieTrailer.results[0].key);
+      var urlTrailer = '<iframe width="850" height="472" src="https://www.youtube.com/embed/'+ serieTrailer.results[0].key +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      document.querySelector(".trailer").innerHTML= urlTrailer;
+
+      })
+       .catch(function(error) {
+         console.log(error);
+        })
+  /*
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3EGzHsye71c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  */
+
   })
