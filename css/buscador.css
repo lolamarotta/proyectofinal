@@ -1,0 +1,70 @@
+.navbar {
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  z-index: 2;
+}
+
+#logo-nombre a {
+  font-family: 'Monoton', cursive;
+  color: #ff2d2d;
+  font-size: 35px;
+}
+
+.logo-nombre a:hover {
+  font-family: 'Monoton', cursive;
+  color: red;
+  font-size: 35px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.navbar {
+  list-style: none;
+  padding: 10px 40px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.li-navbar {
+  padding: 10px 20px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.li-navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.li-navbar a:hover{
+  text-decoration: none;
+  color: grey;
+}
+
+.buscador input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-family: 'Questrial', sans-serif;
+  color: black;
+  height: 20px;
+  width: 200px;
+}
+
+.buscador button {
+  color: white;
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+ /* Fin del header */
+
+
+body div {
+  background-color: black;
+}

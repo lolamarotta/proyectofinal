@@ -22,7 +22,7 @@ window.addEventListener('load',function() {
         // console.log(informacion.results[i].poster_path);
          elementsHtml += '<div class="resultados uk-card uk-card-default uk-card-body uk-width-1-5">'
          elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" >'
-         elementsHtml += '<a href="detalle.html?id=' + resultados[i].id + '">VER DETALLE</a>'
+         elementsHtml += '<a href="detalle.html?id=' + resultados[i].id + '">+ Info</a>'
          elementsHtml += '</div>'
        }
 
