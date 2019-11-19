@@ -11,7 +11,7 @@ fetch(URL_DETALLE)
   .then(function (response) {
     return response.json();
   })
-  .then(function (data) {
+  .then(function (data) { 
     console.log(data);
     // cosas para meter en el html el contenido
     var detalleSerie = document.querySelector('.detalle-serie');
