@@ -17,9 +17,10 @@ fetch(URL_DETALLE)
     console.log(data);
     // cosas para meter en el html el contenido
     var detalleSerie = document.querySelector('.detalle-serie');
+    var posterSerie = document.querySelector('.poster');
 
     if (data.poster_path) {
-      detalleSerie.innerHTML += '<img src="https://image.tmdb.org/t/p/original' + data.poster_path + '" >'
+      posterSerie.innerHTML += '<img src="https://image.tmdb.org/t/p/original' + data.poster_path + '" >'
     }
 
     detalleSerie.innerHTML += "<h2>" + data.name + "</h2>";
