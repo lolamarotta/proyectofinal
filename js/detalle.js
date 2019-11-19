@@ -1,3 +1,5 @@
+window.addEventListener ('load', function() {
+
 var urlParams = new URLSearchParams(location.search);
 
 var idSerie =  urlParams.get("id");
@@ -27,4 +29,6 @@ fetch(URL_DETALLE)
   })
   .catch(function (error) {
     console.log(error);
+  })
+
   })
