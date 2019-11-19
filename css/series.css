@@ -6,7 +6,7 @@ header {
   height: 100vh;
 }
 .navbar {
-  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  background-image: linear-gradient(rgba(50,50,50,1), rgba(0,0,0,0));
   z-index: 2;
 }
 
