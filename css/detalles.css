@@ -1,5 +1,5 @@
 .navbar {
-  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  background-image: linear-gradient(rgba(50,50,50,1), rgba(0,0,0,0));
   z-index: 2;
 }
 
@@ -71,10 +71,11 @@ body {
   background-color: black;
 }
 
-.detalle-serie h1 {
+.details h1 {
   color: white;
   font-family: 'Questrial', sans-serif;
   font-size: 2.5rem;
+  margin-left: 3%;
 }
 
 .detalle-serie h2 {
@@ -84,8 +85,16 @@ body {
   font-size: 3.5rem;
 }
 
-.detalle-serie img {
+.poster img {
   height: 30rem;
+  margin-left: 3%;
+  float: left;
+  overflow: hidden;
+}
+
+.trailer iframe {
+  height: 30rem;
+  margin-left: 3%;
 }
 
 .detalle-serie h4 {
@@ -102,6 +111,13 @@ body {
 
 .detalle-serie {
   width: 94%;
+  margin-left: 3%;
+}
+
+.recom h2 {
+  font-family: 'Questrial', sans-serif;
+  color: white;
+  font-size: 2rem;
   margin-left: 3%;
 }
 

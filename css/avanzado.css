@@ -1,10 +1,3 @@
-header {
-  background-image: url('../images/inicio.jpg');
-  background-repeat: no-repeat;
-  z-index: 1;
-  background-size: cover;
-  height: 100vh;
-}
 .navbar {
   background-image: linear-gradient(rgba(50,50,50,1), rgba(0,0,0,0));
   z-index: 2;
@@ -69,30 +62,6 @@ header {
   background-color: rgba(255, 255, 255, 0);
   border: none;
 }
-
-/* Fin del header */
-
-
-/* Body */
-
-body {
-  background-color: black;
-}
-
-.peliculas h2 {
-  font-family: 'Questrial', sans-serif;
-  font-weight: bold;
-  color: white;
-  padding-left: 3.7%;
-}
-
-.peliculas div {
-  width: 94%;
-  align-items: center;
-  margin-left: 3%;
-}
-
-/* Fin del body */
 
 
 /* Footer */
