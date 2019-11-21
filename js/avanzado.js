@@ -13,7 +13,7 @@ window.onload = function(){
     }
   }
 
-  fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=935b83cf932d87a1deec2a0108c3513e&language=en-US")
+  fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=d8a0184cd857dc924c05b43e5a4f7274")
     .then(function(response) {
       return response.json();
     })
