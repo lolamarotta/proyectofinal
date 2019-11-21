@@ -13,15 +13,15 @@ window.onload = function(){
     }
   }
 
-  fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=935b83cf932d87a1deec2a0108c3513e&language=en-US")
+  fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=d8a0184cd857dc924c05b43e5a4f7274")
     .then(function(response) {
       return response.json();
     })
     .then(function(data) {
       var generos = data.genres;
 
-      var listado = document.querySelector("select.generos");
-      var listado2 = document.querySelector("select.generos2");
+      var listado = document.querySelector("select[name='generoincluido']");
+      var listado2 = document.querySelector("select[name='generoexcluido']");
 
       for (var i = 0; i < generos.length ; i++) {
         listado.innerHTML += "<option value='" + generos[i].id + "'>" + generos[i].name + "</option>";
@@ -31,3 +31,4 @@ window.onload = function(){
     .catch(function(error) {
       alert("Error");
     })
+  }
