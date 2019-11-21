@@ -24,6 +24,7 @@ fetch(URL_DETALLE)
     }
 
     detalleSerie.innerHTML += "<h2>" + data.name + "</h2>";
+    detalleSerie.innerHTML += "<h4>Genre</h4><p><a href='generos.html'>" + data.genres[0].name + "</a></p>";
     // detalleSerie.innerHTML += "<h4>Genre: <a href='resultados-por-genero.html?idGenero=" + datos.genres[i].id + "&nombreGenero=" + datos.genres[i].name + "'" + data.genre + "</h4>";
     detalleSerie.innerHTML += "<h4>Overview:</h4><p>" + data.overview + "</p>";
     detalleSerie.innerHTML += "<h4>On air since:</h4><p>" + data.first_air_date + "</p>";
