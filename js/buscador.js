@@ -30,7 +30,9 @@ window.addEventListener('load',function() {
 
   });
 
-
+// var e = new Error('Sorry, what you looked for couldn't be found');
+// e.message es 'Sorry, what you looked for couldn't be found'
+// throw e;
 
 
 

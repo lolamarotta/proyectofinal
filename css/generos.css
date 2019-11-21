@@ -150,6 +150,14 @@ span {
   margin-left: 3%;
 }
 
+div.resultados.uk-card.uk-card-default.uk-card-body.uk-width-1-5 {
+  background: black;
+}
+
+.resultados a {
+  color: grey;
+}
+
 /* footer */
 
 footer {

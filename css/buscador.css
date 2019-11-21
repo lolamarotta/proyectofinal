@@ -65,9 +65,10 @@
  /* Fin del header */
 
 
-body div {
+.uk-card-default {
   background-color: black;
 }
+
 
 
 /* Footer */
