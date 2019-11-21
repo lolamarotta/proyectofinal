@@ -1,4 +1,14 @@
 window.onload = function(){
+  var añoDeEstreno = document.querySelector(".año")
+  var opcionesFe;
+  console.log(añoDeEstreno);
+  for (var i = 1950; i < 2020; i++) {
+    opcionesFe = '<option>'
+    opcionesFe += i
+    opcionesFe += "</opciones>"
+    añoDeEstreno.innerHTML += opcionesFe
+    
+  }
   var generoID = new URLSearchParams(location.search).get('idGenero');
 
   //Esto revisa las condiciones para ejecutar la busqueda
@@ -27,6 +37,7 @@ window.onload = function(){
         listado.innerHTML += "<option value='" + generos[i].id + "'>" + generos[i].name + "</option>";
         listado2.innerHTML += "<option value='" + generos[i].id + "'>" + generos[i].name + "</option>";
       }
+
     })
     .catch(function(error) {
       alert("Error");

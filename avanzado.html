@@ -36,7 +36,7 @@
     </header>
     <main>
           <h1>Buscador avanzado</h1>
-          <form class="" action="avanzado.html" method="get">
+          <form class="" action="resultadoavanzado.html" method="get">
             <label for="">¿Qué género estás buscando?</label>
             <select class="generos" name="generoincluido">
               <option value="" disabled selected>Generos</option>
@@ -46,8 +46,11 @@
               <option value="" disabled selected>Generos</option>
 
             </select>
-            <label for="">¿Qué año de estreno buscas?</label>
-            <input type="text" name="añoestreno" value="" placeholder="Año de estreno">
+            <label for="">Año de estreno</label>
+            <select class="año" name="añoElegido">
+
+            </select>
+
             <label for="">¿Cómo queres ver los resultados?</label>
             <select name="ordenresultados">
               <option value="" disabled selected>Orden de resultados</option>
@@ -58,7 +61,7 @@
               <option value="popularity.desc">Por mayor popularidad</option>
               <option value="popularity.asc">Por menor popularidad</option>
             </select>
-            <button type="submit" name="button"> Search </button>
+            <button type="submit"> Search </button>
           </form>
         </main>
 
