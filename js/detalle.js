@@ -54,7 +54,7 @@ fetch(URL_DETALLE)
   */
 
   // Fetch para recomendaciones
-  fetch("https://api.themoviedb.org/3/tv/62286/recommendations?api_key=" + API_KEY + "&page=1")
+  fetch("https://api.themoviedb.org/3/tv/" + idSerie + "/recommendations?api_key=" + API_KEY + "&page=1")
     .then(function(rta) {
       return rta.json()
     })
@@ -66,11 +66,18 @@ fetch(URL_DETALLE)
         recomendaciones[i]
 
         var reco = document.querySelector(".recomendaciones");
+        var elemento = '<li>'
+        elemento += '<div class="uk-panel">'
+        elemento += '<a href="detalle.html?id='+datos.results[i].id+'">'
+        elemento += '<img src="https://image.tmdb.org/t/p/original'+ datos.results[i].poster_path + '" elements>'
+        elemento += '</a> </div> </li>'
 
-          reco.innerHTML += `<div class="uk-panel">`
-          reco.innerHTML += `<a href="detalle.html?id=${datos.results[i].id}">`
-          reco.innerHTML += `<img src="https://image.tmdb.org/t/p/original` + datos.results[i].poster_path + `" elements>`
-          reco.innerHTML += `</div>`;
+          reco.innerHTML += elemento
+          // reco.innerHTML += '<li>'
+          // reco.innerHTML += '<div class="uk-panel">'
+          // reco.innerHTML += '<a href="detalle.html?id='+datos.results[i].id+'">'
+          // reco.innerHTML += '<img src="https://image.tmdb.org/t/p/original'+ datos.results[i].poster_path + '" elements>'
+          // reco.innerHTML += '</a> </div> </li>'
       }
     })
 
