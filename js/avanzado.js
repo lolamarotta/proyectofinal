@@ -20,8 +20,8 @@ window.onload = function(){
     .then(function(data) {
       var generos = data.genres;
 
-      var listado = document.querySelector("select.generos");
-      var listado2 = document.querySelector("select.generos2");
+      var listado = document.querySelector("select[name='generoincluido']");
+      var listado2 = document.querySelector("select[name='generoexcluido']");
 
       for (var i = 0; i < generos.length ; i++) {
         listado.innerHTML += "<option value='" + generos[i].id + "'>" + generos[i].name + "</option>";
@@ -31,3 +31,4 @@ window.onload = function(){
     .catch(function(error) {
       alert("Error");
     })
+  }
