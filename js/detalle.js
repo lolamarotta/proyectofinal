@@ -13,7 +13,7 @@ fetch(URL_DETALLE)
   .then(function (response) {
     return response.json();
   })
-  .then(function (data) { 
+  .then(function (data) {
     console.log(data);
     // cosas para meter en el html el contenido
     var detalleSerie = document.querySelector('.detalle-serie');
@@ -31,8 +31,7 @@ fetch(URL_DETALLE)
   })
   .catch(function (error) {
     console.log(error);
-  })
-
+  });
 
   // Fetch para trailers
   fetch("https://api.themoviedb.org/3/tv/"+ idSerie +"/videos?api_key=d8a0184cd857dc924c05b43e5a4f7274&language=en-US")
