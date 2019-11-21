@@ -3,10 +3,11 @@
   z-index: 2;
 }
 
-#logo-nombre a {
+.logo-nombre a {
   font-family: 'Monoton', cursive;
   color: #ff2d2d;
   font-size: 35px;
+  padding-right: 15px;
 }
 
 .logo-nombre a:hover {
@@ -63,6 +64,13 @@
   border: none;
 }
 
+ /* Fin header */
+
+ /* Body */
+
+ body {
+   background-color: black;
+ }
 
 /* Footer */
 
