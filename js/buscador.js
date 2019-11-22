@@ -3,6 +3,7 @@ window.addEventListener('load',function() {
   // Searchbar
   var API_KEY= "d8a0184cd857dc924c05b43e5a4f7274";
   var searchParams = new URLSearchParams(window.location.search);
+  console.log(window.location.search);
   var searchedWord = searchParams.get('searchWord')
 
   fetch("https://api.themoviedb.org/3/search/tv?api_key="+API_KEY+"&language=en-US&query="+searchedWord+"&page=1")
