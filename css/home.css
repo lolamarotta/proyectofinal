@@ -1,6 +1,8 @@
 body {
   background-color: black;
+  width: 100%;
 }
+/* header */
 
 .navbar {
   background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
@@ -302,4 +304,29 @@ footer button{
 footer p{
   display: flex;
   align-items: center;
+}
+
+/* empiezan los @media */
+@media (max-width: 550px) {
+
+.li-navbar {
+  font-size: 10px;
+}
+.inicio-h1 {
+  font-size: 3rem;
+  color: grey;
+}
+.header {
+  height: 13vh;
+}
+.button {
+  padding: 20px 0;
+  width: 37%;
+}
+
+}
+
+@media (max-width: 1030px) {
+  /* como es originalmente */
+
 }

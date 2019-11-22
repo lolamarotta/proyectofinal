@@ -34,33 +34,55 @@
        </ul>
       </nav>
     </header>
+    <br> <br>
     <main>
-          <h1>Buscador avanzado</h1>
-          <form class="" action="avanzado.html" method="get">
-            <label for="">¿Qué género estás buscando?</label>
-            <select class="generos" name="generoincluido">
-              <option value="" disabled selected>Generos</option>
-            </select>
-            <label for="">¿Qué género queres excluir?</label>
-            <select class="generos2" name="generoexcluido">
-              <option value="" disabled selected>Generos</option>
+          <h1>Advanced Search</h1>
+          <br>
 
-            </select>
-            <label for="">¿Qué año de estreno buscas?</label>
-            <input type="text" name="añoestreno" value="" placeholder="Año de estreno">
-            <label for="">¿Cómo queres ver los resultados?</label>
-            <select name="ordenresultados">
-              <option value="" disabled selected>Orden de resultados</option>
-              <option value="vote_average.desc">Por mayor puntaje</option>
-              <option value="vote_average.asc">Por menor puntaje</option>
-              <option value="first_air_date.desc">Mas nuevo</option>
-              <option value="first_air_date.asc">Mas viejo</option>
-              <option value="popularity.desc">Por mayor popularidad</option>
-              <option value="popularity.asc">Por menor popularidad</option>
-            </select>
-            <button type="submit" name="button"> Search </button>
+          <form class="" action="resultadoavanzado.html" method="get">
+
+            <div class="">
+              <label for="">Choose the genre/s you're looking for</label>
+              <select class="generos" name="generoincluido">
+                <option value="" disabled selected>Genres</option>
+              </select>
+            </div>
+            <br>
+
+            <div class="">
+              <label for="">Choose the genre/s you want to exclude</label>
+              <select class="generos2" name="generoexcluido">
+                <option value="" disabled selected>Genres</option>
+              </select>
+            </div>
+            <br>
+
+            <div class="">
+              <label for="">Release year</label>
+              <select class="año" name="añoElegido">
+              </select>
+            </div>
+            <br>
+
+            <div class="">
+              <label for="">Choose the results order</label>
+              <select name="ordenresultados">
+                <option value="" disabled selected>Results order</option>
+                <option value="vote_average.desc">Higher rating</option>
+                <option value="vote_average.asc">Lower rating</option>
+                <option value="first_air_date.desc">New to old</option>
+                <option value="first_air_date.asc">Old to new</option>
+                <option value="popularity.desc">Popularity descending</option>
+                <option value="popularity.asc">Popularity ascending</option>
+              </select>
+            </div>
+
+            <br>
+            <button type="submit"> Search </button>
           </form>
         </main>
+
+        <br><br><br>
 
     <footer>
       <img src="images/DMBlogo.png" alt="">

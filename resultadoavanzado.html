@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Esdtos son los links de las tipografias de google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+
+    <!-- Estos son los links a los otros archivos, y adentro estan tambien los links the UIKit -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="css/home.css">
+
+
+    <title>iPlay</title>
+  </head>
+  <body>
+
+<header>
+
+  <nav id="home">
+    <!-- Barra de navegacion -->
+    <ul class="navbar">
+      <li class="li-navbar" id="logo-nombre"> <a href="#home">iPlay</a> </li>
+      <li class="li-navbar"> <a href="generos.html">Genre</a> </li>
+      <li class="li-navbar"> <a href="series.html">TV Shows</a> </li>
+      <li class="li-navbar">
+        <form class="buscador" action="buscador.html" method="get">
+          <input type="text" name="searchWord">
+          <button type="submit">Search</button>
+        </form>
+      </li>
+      <li class="li-navbar"> <a href="avanzado.html">Advanced Search</a> </li>
+
+    </ul>
+
+
+  </nav>
+
+  <ul class="resultados">
+
+  </ul>
+
+
+
+<!-- <div class="flecha-abajo">
+  <span uk-icon="icon: chevron-down; ratio: 5" id="flecha-abajo"></span>
+</div> -->
+
+</header>
+<footer>
+  <img src="images/DMBlogo.png" alt="">
+  <div>
+    <p style="margin-bottom:0;">Project by Martin Albores, Lola Marotta & Macarena Montoya</p>
+  </div>
+  <button id="logoutbutton">Log Out</button>
+</footer>
+
+<script type="text/javascript" src="js/resultadoAvanzado.js">
+
+</script>
+</body>
+</html>

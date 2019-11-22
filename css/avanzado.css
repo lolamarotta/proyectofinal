@@ -70,7 +70,50 @@
 
  body {
    background-color: black;
+   height: 100vh;
  }
+
+main h1 {
+  margin-left: 3%;
+  font-family: 'Questrial', sans-serif;
+  font-size: 3.5rem;
+  color: white;
+}
+
+main form {
+  margin-left: 3%;
+  font-family: 'Questrial', sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+main form button {
+  font-family: 'Questrial', sans-serif;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 14px 0;
+  border-radius: 30px;
+  width: 200px;
+  top: 10px;
+  font-weight: bold;
+}
+
+main form div {
+  align: center;
+}
+
+main form select {
+  font-family: 'Questrial', sans-serif;
+  color: white;
+  background-color: grey;
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 14px 0;
+  align: center;
+}
+
 
 /* Footer */
 
