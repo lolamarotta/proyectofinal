@@ -16,18 +16,26 @@ window.addEventListener('load',function() {
 
       var ul = document.querySelector(".resultados")
       var elementsHtml = '';
-      for (var i = 0; i < resultados.length; i++) {
-        // console.log(informacion.results[i].name);
-        // console.log(informacion.results[i].id);
-        // console.log(informacion.results[i].poster_path);
-         elementsHtml += '<div class="resultados uk-card uk-card-default uk-card-body uk-width-1-5">'
-         elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" >'
-         elementsHtml += '<a href="detalle.html?id=' + resultados[i].id + '">+ Info</a>'
-         elementsHtml += '</div>'
-       }
+      if (resultados.length == 0) {
+      alert("Sorry, what you were looking for could not be found")
+        console.log("no encontre nada");
+      }else {
 
-       ul.innerHTML = elementsHtml;
 
+    for (var i = 0; i < resultados.length; i++) {
+      // console.log(informacion.results[i].name);
+      // console.log(informacion.results[i].id);
+      // console.log(informacion.results[i].poster_path);
+       elementsHtml += '<div class="resultados uk-card uk-card-default uk-card-body uk-width-1-5">'
+       elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" >'
+       elementsHtml += '<a href="detalle.html?id=' + resultados[i].id + '">+ Info</a>'
+       elementsHtml += '</div>'
+  }
+
+ ul.innerHTML = elementsHtml;
+
+
+}
   });
 
 // var e = new Error('Sorry, what you looked for couldn't be found');
