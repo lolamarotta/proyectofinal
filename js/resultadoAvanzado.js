@@ -29,7 +29,7 @@ window.addEventListener('load',function(){
  for (var i=0; i < arrayDeSeries.length; i++){
 
       li = "<li>"
-       li += "<a href='detalle.html?idPelicula="+arrayDeSeries[i].id+"'>"
+       li += "<a href='detalle.html?id="+arrayDeSeries[i].id+"'>"
        li += "<p>" + arrayDeSeries[i].original_name + "</p>"
        li += "<img src = '" + urlIMG + arrayDeSeries[i].poster_path + "' style='width:300px;'>"
        li += "</a>"
