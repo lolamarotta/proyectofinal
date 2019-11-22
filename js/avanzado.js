@@ -7,7 +7,7 @@ window.onload = function(){
     opcionesFe += i
     opcionesFe += "</opciones>"
     añoDeEstreno.innerHTML += opcionesFe
-    
+
   }
   var generoID = new URLSearchParams(location.search).get('idGenero');
 
@@ -29,6 +29,7 @@ window.onload = function(){
     })
     .then(function(data) {
       var generos = data.genres;
+      
 
       var listado = document.querySelector("select[name='generoincluido']");
       var listado2 = document.querySelector("select[name='generoexcluido']");
