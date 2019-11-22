@@ -30,8 +30,8 @@ window.addEventListener('load',function(){
 
       li = "<li>"
        li += "<a href='detalle.html?id="+arrayDeSeries[i].id+"'>"
-       li += "<p>" + arrayDeSeries[i].original_name + "</p>"
-       li += "<img src = '" + urlIMG + arrayDeSeries[i].poster_path + "' style='width:300px;'>"
+       // li += "<p>" + arrayDeSeries[i].original_name + "</p>"
+       li += "<img src = '" + urlIMG + arrayDeSeries[i].poster_path + "' style='width:310px;'>"
        li += "</a>"
        li += "</li>"
        ul.innerHTML += li;
