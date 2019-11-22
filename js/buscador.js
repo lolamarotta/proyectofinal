@@ -7,8 +7,8 @@ window.addEventListener('load',function() {
   var searchedWord = searchParams.get('searchWord')
 
   fetch("https://api.themoviedb.org/3/search/tv?api_key="+API_KEY+"&language=en-US&query="+searchedWord+"&page=1")
-    .then(function (res) {
-      return res.json();
+    .then(function (resultados) {
+      return resultados.json();
     })
     .then(function (informacion) {
       var resultados = informacion.results;
@@ -18,8 +18,16 @@ window.addEventListener('load',function() {
       var ul = document.querySelector(".resultados")
       var elementsHtml = '';
       if (resultados.length == 0) {
-      alert("Sorry, what you were looking for could not be found")
+          alert("Sorry, what you were looking for could not be found")
         console.log("no encontre nada");
+
+      }else if (resultados.length == "") {
+        UIkit.notification({
+          message: 'Insert text',
+          status: 'warning',
+          pos: 'top-center',
+          timeout: 3000
+        })
       }else {
 
 
