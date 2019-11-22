@@ -5,9 +5,9 @@ window.addEventListener('load',function(){
   console.log(incluir);
   var excluir = search.get('generoexcluido')
   console.log(excluir);
-  var orden = search.get('añoElegido')
+  var anio = search.get('añoElegido')
   console.log(orden);
-  var anio = search.get('ordenresultados')
+  var orden = search.get('ordenresultados')
   console.log(anio);
 
 

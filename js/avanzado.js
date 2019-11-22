@@ -29,7 +29,7 @@ window.onload = function(){
     })
     .then(function(data) {
       var generos = data.genres;
-      
+
 
       var listado = document.querySelector("select[name='generoincluido']");
       var listado2 = document.querySelector("select[name='generoexcluido']");
